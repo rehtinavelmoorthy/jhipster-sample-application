@@ -1,0 +1,66 @@
+{
+    "name": "Patient",
+    "fields": [
+        {
+            "fieldName": "patientId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fisrtName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fullName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dOB",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mobileNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "emailId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "emailVeried",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "mobileVerified",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "address",
+            "otherEntityRelationshipName": "patient",
+            "relationshipName": "addressId",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200130111744",
+    "entityTableName": "patient",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "jhipsterSampleApplication",
+    "applications": "*",
+    "microserviceName": "jhipsterSampleApplication"
+}
