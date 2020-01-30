@@ -11,6 +11,7 @@ mobileVerified Boolean,
 Address Integer
 }
 
+
 entity Address{
 addressId Integer,
 patientId Integer
@@ -26,10 +27,9 @@ Pincode String
 relationship OneToOne{
 Patient{addressId} to Address
 }
-
 paginate Patient with pagination
-
 service all with serviceImpl 
+
 
 
 
