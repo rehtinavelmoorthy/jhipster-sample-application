@@ -1,0 +1,53 @@
+{
+    "name": "Address",
+    "fields": [
+        {
+            "fieldName": "addressId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "patientId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "addressLine1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addressLine2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cityName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "stateName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "countryName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nationality",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pincode",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200130111745",
+    "entityTableName": "address",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "jhipsterSampleApplication",
+    "applications": "*",
+    "microserviceName": "jhipsterSampleApplication"
+}
